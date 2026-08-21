@@ -467,7 +467,7 @@ el('xlsBtn').addEventListener('click', () => {
   const ws = XLSX.utils.aoa_to_sheet(data);
   ws['!cols'] = [{wch:50},{wch:10},{wch:12}];
   const wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, ws, 'PDF Register');
+  XLSX.utils.book_append_sheet(wb, ws, 'PDF PageCount');
   XLSX.writeFile(wb, 'pdf-register.xlsx');
 });
 
